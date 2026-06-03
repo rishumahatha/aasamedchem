@@ -13,7 +13,7 @@ function Admin() {
   // FETCH ORDERS
   const fetchOrders = async () => {
     const response = await fetch(
-      "http://localhost:5000/orders"
+      "https://aasamedchem.onrender.com/orders"
     );
 
     const data = await response.json();
@@ -24,7 +24,7 @@ function Admin() {
   // FETCH PRODUCTS
   const fetchProducts = async () => {
     const response = await fetch(
-      "http://localhost:5000/products"
+      "https://aasamedchem.onrender.com/products"
     );
 
     const data = await response.json();
@@ -35,7 +35,7 @@ function Admin() {
   // DELETE PRODUCT
   const deleteProduct = async (id) => {
     await fetch(
-      `http://localhost:5000/products/${id}`,
+      `https://aasamedchem.onrender.com/products/${id}`,
       {
         method: "DELETE",
       }

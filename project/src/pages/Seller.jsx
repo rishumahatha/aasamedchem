@@ -16,7 +16,7 @@ function Seller() {
   };
 
   const addProduct = async () => {
-    await fetch("http://localhost:5000/products", {
+    await fetch("https://aasamedchem.onrender.com/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

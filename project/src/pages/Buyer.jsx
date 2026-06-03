@@ -11,7 +11,7 @@ function Buyer() {
   }, []);
 
   const fetchProducts = async () => {
-    const response = await fetch("http://localhost:5000/products");
+    const response = await fetch("https://aasamedchem.onrender.com/products");
 
     const data = await response.json();
 
@@ -43,7 +43,7 @@ function Buyer() {
     const total = convertedQty * product.price_per_base_unit;
 
     try {
-      const res = await fetch("http://localhost:5000/orders", {
+      const res = await fetch("https://aasamedchem.onrender.com/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
